@@ -1,0 +1,76 @@
+<div class="jumbotron">
+    <h1 class="text-center">Juego X vs 0</h1>
+    <h3 class="text-center">{{ganador}}</h3>
+</div>
+<br>
+<div a class="container contenedor py-5">
+    <div class="row">
+        <div class="col col-3">
+            <div class="caja" [style.background]="caja1"  (click)="onSelect(1)">
+                <p *ngIf="txt1 == 'X'">X</p>
+                <p *ngIf="txt1 == 'O'">O</p>
+            </div>
+        </div> 
+        <div class="col col-3">
+            <div class="caja" [style.background]="caja2" (click)="onSelect(2)">
+                <p *ngIf="txt2 == 'X'">X</p>
+                <p *ngIf="txt2 == 'O'">O</p>
+            </div>
+        </div>
+        <div class="col col-3">
+            <div class="caja" [style.background]="caja3" (click)="onSelect(3)">
+                <p *ngIf="txt3 == 'X'">X</p>
+                <p *ngIf="txt3 == 'O'">O</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col col-3">
+            <div class="caja" [style.background]="caja4" (click)="onSelect(4)">
+                <p *ngIf="txt4 == 'X'">X</p>
+                <p *ngIf="txt4 == 'O'">O</p>
+            </div>
+        </div> 
+        <div class="col col-3">
+            <div class="caja" [style.background]="caja5" (click)="onSelect(5)">
+                <p *ngIf="txt5 == 'X'">X</p>
+                <p *ngIf="txt5 == 'O'">O</p>
+            </div>
+        </div>
+        <div class="col col-3">
+            <div class="caja" [style.background]="caja6" (click)="onSelect(6)">
+                <p *ngIf="txt6 == 'X'">X</p>
+                <p *ngIf="txt6 == 'O'">O</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col col-3">
+            <div class="caja" [style.background]="caja7" (click)="onSelect(7)">
+                <p *ngIf="txt7 == 'X'">X</p>
+                <p *ngIf="txt7 == 'O'">O</p>
+            </div>
+        </div> 
+        <div class="col col-3">
+            <div class="caja" [style.background]="caja8" (click)="onSelect(8)">
+                <p *ngIf="txt8 == 'X'">X</p>
+                <p *ngIf="txt8 == 'O'">O</p>
+            </div>
+        </div>
+        <div class="col col-3">
+            <div class="caja" [style.background]="caja9" (click)="onSelect(9)">
+                <p *ngIf="txt9 == 'X'">X</p>
+                <p *ngIf="txt9 == 'O'">O</p>
+            </div>
+        </div>
+    </div>
+        <br>
+        <div class="row">
+        <div colspan=3 class="col">
+            <button class="btn btn-lg btn-success"  (click)="onJugar()" >Jugar de nuevo</button>
+        </div>
+        </div>
+
+    </div>
